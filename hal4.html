@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+</head>
+<style>
+    body {
+    background-color: #a7bfe6;
+    margin: 0px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    transform: translateY(-20px);
+}
+
+.navbar > li {
+    position: relative;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+.navbar > li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.navbar > li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 10px 20px;
+}
+
+.badge {
+    background-color: #a7bfe6;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 7px;
+    margin-left: 10px;
+}
+</style>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Services</li>
+            <li>Tutorials
+                <ul class="dropdown">
+                    <li>CSS <span class="badge">12 Available</span></li>
+                    <li>HTML <span class="badge">9 Available</span></li>
+                    <li>Jade <span class="badge">3 Available</span></li>
+                    <li>Javascript <span class="badge">21 Available</span></li>
+                    <li>Design <span class="badge">37 Available</span></li>
+                </ul>
+            </li>
+            <li>Contact</li>
+        </ul>
+    </nav>

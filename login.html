@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login dan Registrasi</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.form-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+button.btn {
+    background-color: transparent;
+    color: #003f5c;
+    border: 2px solid #003f5c;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.btn.active {
+    background-color: #003f5c;
+    color: white;
+}
+
+input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+}
+
+a {
+    color: #003f5c;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button.submit {
+    background-color: #003f5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.submit:hover {
+    background-color: #002a4d;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="form-container login">
+            <h2>Form Login</h2>
+                <section style="display: flex; flex-direction: row;">
+                    <button class="btn active">Login</button>
+                    <button class="btn">Daftar</button>
+                </section>
+            <input type="email" placeholder="Masukkan Email" required>
+            <input type="password" placeholder="Masukkan Password" required>
+            <a href="#">Lupa password?</a>
+           <a href="hal4.html"><button class="btn submit">Login</button></a> 
+            <p>Belum punya akun? <a href="#">Daftar sekarang</a></p>
+        </div>
+        <div class="form-container register">
+            <h2>Form Registrasi</h2>
+                <section style="display: flex; flex-direction: row;">
+                    <button class="btn">Login</button>
+                    <button class="btn active">Daftar</button>
+                </section>
+            <input type="text" placeholder="Nama lengkap" required>
+            <input type="email" placeholder="Masukkan Email" required>
+            <input type="password" placeholder="Masukkan Password" required>
+            <input type="password" placeholder="Ulangi password" required>
+            <button class="btn submit">Daftar</button>
+            <p>Sudah punya akun? <a href="#">Login sekarang</a></p>
+        </div>
+    </div>
+</body>
+</html>
