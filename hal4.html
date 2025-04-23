@@ -29,6 +29,24 @@
     background-color: #f0f0f0;
 }
 
+.brand {
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.firstname {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.lastname {
+    color: #a7bfe6;
+    padding-left: 4px;
+}
+
 .dropdown {
     display: none;
     position: absolute;
@@ -56,11 +74,16 @@
     border-radius: 5px;
     padding: 3px 7px;
     margin-left: 10px;
+    
 }
 </style>
 <body>
     <nav>
         <ul class="navbar">
+            <div class="brand">
+                <div class="firstname">jamaluddin</div>
+                <div class="lastname">akbar</div>
+            </div>
             <li>Home</li>
             <li>Blog</li>
             <li>Services</li>
